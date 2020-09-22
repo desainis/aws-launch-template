@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include aws-launch-template"
+      include_role:
+        name: "aws-launch-template"
